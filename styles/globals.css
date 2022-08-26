@@ -8,14 +8,11 @@ body {
 
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cfc9d8' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
-
 }
-
 
 :root {
   --color-red: brown;
 }
-
 
 a {
   color: inherit;
@@ -25,7 +22,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 
 /*////// CARROUSEL /////////*/
 header {
@@ -37,9 +33,7 @@ header {
 
 header {
   border-bottom: 5px solid #005bbd !important;
-
 }
-
 
 header a {
   font-weight: 700;
@@ -52,9 +46,8 @@ header a:hover {
 
 /*////// CARROUSEL /////////*/
 
-
 .carrousel_wrapper {
-  height:500px;
+  height: 500px;
   background-size: cover !important;
   position: relative;
   margin-bottom: 20px;
@@ -84,7 +77,6 @@ header a:hover {
   margin-bottom: 30px;
 }
 
-
 .MuiCardContent-root {
   padding: 20px !important;
 }
@@ -106,8 +98,8 @@ header a:hover {
 }
 
 /* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
   background: #ffffff;
   margin-bottom: 30px;
 }
-Footer
