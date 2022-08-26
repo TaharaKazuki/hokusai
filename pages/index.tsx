@@ -1,10 +1,32 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage, GetStaticProps } from 'next'
+import { CarrouselCom } from '@/components/ui/carrousel'
+import { getJsonData } from 'utils/tool'
 
-const Home: NextPage = () => {
-  return <div className={styles.container}>Home</div>
+type Props = {
+  data: {
+    carrousel: {
+      id: string
+      name: string
+      title: string
+    }[]
+  }
+}
+
+const Home: NextPage<Props> = ({ data }) => {
+  return (
+    <>
+      <CarrouselCom data={data.carrousel} />
+    </>
+  )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await getJsonData()
+  return {
+    props: {
+      data: data,
+    },
+  }
 }
 
 export default Home
