@@ -21,7 +21,6 @@ type Props = {
 }
 
 const Home: NextPage<Props> = ({ data }) => {
-  console.info(data)
   return (
     <>
       <CarrouselCom data={data.carrousel} />
