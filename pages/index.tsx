@@ -1,4 +1,4 @@
-import type { NextPage, GetStaticProps } from 'next'
+import type { NextPage, GetStaticPropsResult } from 'next'
 import { CarrouselCom } from '@/components/ui/carrousel'
 import { getJsonData } from 'utils/tool'
 
@@ -20,7 +20,7 @@ const Home: NextPage<Props> = ({ data }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps = async (): Promise<GetStaticPropsResult<Props>> => {
   const data = await getJsonData()
   return {
     props: {
