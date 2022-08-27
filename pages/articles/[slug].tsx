@@ -1,5 +1,4 @@
-import { FC } from 'react'
-import { GetStaticPropsContext, GetStaticPropsResult, GetStaticPathsResult } from 'next'
+import { GetStaticPropsContext, GetStaticPropsResult, GetStaticPathsResult, NextPage } from 'next'
 import { getJsonData } from 'utils/tool'
 import Image from 'next/image'
 
@@ -16,7 +15,7 @@ type Article = {
   content: string
 }
 
-const ArticlePage: FC<Props> = ({ data }) => {
+const ArticlePage: NextPage<Props> = ({ data }) => {
   return data ? (
     <div>
       <Image
